@@ -93,25 +93,28 @@ html,body{
     padding: 50px;
 }
 
-.first-page-heading{
+.first-page-heading
+{
     font-size: 50px;
     margin: 52px 0;
     color: black;
 }
 
-.first-page-text{
+.first-page-text
+{
   font-size: 20px; 
   margin-bottom: 25%;
     
 }
 
 .first-page-screenshot{
-    left: 50%;
+    
+    left:63%;
     display: inline-block;
-    width: 45%;
+    width: 20%;
     float: right;
     position: fixed;
-    top:60px;
+    top:100px;
 /*    margin-top: -50px;*/
 }
 
@@ -131,24 +134,108 @@ html,body{
 
 .second-page-heading{
     font-size: 50px;
-    margin: 52px 0;
+    margin: 0px 0px 52px 0px;
     color: white;
 }
 
 .second-page-text{
   font-size: 20px; 
-  margin-bottom: 25%;
+  margin-bottom: 33%;
     color: white;
-    
 }
 .second-page-screenshot{
-    left: 50%;
+    left: 63%;
     display: inline-block;
-    width: 45%;
+    width: 20%;
     float: right;
     position: absolute;
+    top: 40px;
 }
 
+@media only screen and (max-width:1024px){
+
+    .first-page-heading{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .second-page-heading{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media only screen and (max-width:768px){
+    
+    .first-page-heading{
+        font-size: 30px;
+    }
+    .first-page-text{
+        font-size: 17px;
+    }
+    .first-page-screenshot{
+        width: 28%;
+        left: 60%;
+    }
+    
+    .second-page-heading{
+        font-size: 30px;
+    }
+    .second-page-text{
+        font-size: 17px;
+    }
+    .second-page-screenshot{
+        width: 28%;
+        left: 60%;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    
+    #first-page-text-wrapper{
+        padding: 20px;
+        width: 50%;
+    }
+    
+    .first-page-heading{
+        font-size: 20px;
+        margin:70px 0 10px 0;
+    }
+    
+    .first-page-text{
+        font-size:15px;  
+    }
+    
+    .first-page-screenshot{
+        width: 45%;
+        top:20%;
+        left: 50%;
+    }
+    
+    #second-page-text-wrapper{
+        padding: 20px;
+        width: 50%;
+    }
+    
+    .second-page-heading{
+        font-size:20px;
+        margin:10px 0 10px 0;
+    }
+    
+    .second-page-text{
+        font-size: 15px;
+    }
+    
+    .second-page-screenshot{
+        position: absolute;
+        top: 10%;
+        width: 45%;
+        left: 50%;
+    }
+    
+}
 
 
 /*
