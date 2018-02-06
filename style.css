@@ -82,9 +82,9 @@ html,body{
 }
 .scroller_anchor2{height:10px; margin:0; position: relative; top:700px; padding:0;
 }
-.scroller_anchor3{height:10px; margin:0; padding:0; background-color: red; z-index: 600;
+.scroller_anchor3{height:10px; margin:0; padding:0;
 }
-.scroller_anchor4{height:10px; margin:0; position: relative; top:1500px; padding:0; background-color: green; z-index: 500;
+.scroller_anchor4{height:10px; margin:0; position: relative; top:1300px; padding:0;
 }
 #first-page{
     width: 100%;
@@ -222,6 +222,13 @@ html,body{
         left: 60%;
     }
     
+    .scroller_anchor2{
+        top: 500px;
+    }
+    
+    .scroller_anchor4{
+        top: 1050px;
+    }
 }
 
 @media only screen and (max-width:500px){
@@ -269,6 +276,11 @@ html,body{
     }
     
     #third-page{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #fourth-page{
         width: 100%;
         height: 100%;
     }
