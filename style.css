@@ -78,20 +78,30 @@ html,body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
+.scroller_anchor{height:10px; margin:0; padding:0;
+}
+.scroller_anchor2{height:10px; margin:0; position: relative; top:700px; padding:0;
+}
+.scroller_anchor3{height:10px; margin:0; padding:0; background-color: red; z-index: 600;
+}
+.scroller_anchor4{height:10px; margin:0; position: relative; top:1500px; padding:0; background-color: green; z-index: 500;
+}
 #first-page{
     width: 100%;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
     background-color: white;
-    z-index: 50;
+    z-index: 80;
     position: absolute;
+    height: 100%;
+    top: 200%;
 }
 
 #first-page-text-wrapper{
-    position: fixed;
+    position: absolute;
     width: 50%;
     display: inline-block;
     padding: 50px;
+    z-index: 50;
 }
 
 .first-page-heading
@@ -99,23 +109,24 @@ html,body{
     font-size: 50px;
     margin: 52px 0;
     color: black;
+    z-index: 50;
 }
 
 .first-page-text
 {
   font-size: 20px; 
   margin-bottom: 25%;
-    
+    z-index: 50;   
 }
 
 .first-page-screenshot{
-    
     left:63%;
     display: inline-block;
-    width: 20%;
+    width: 18%;
     float: right;
-    position: fixed;
-    top:100px;
+    position: absolute;
+    top:90px;
+    z-index: 50;
 /*    margin-top: -50px;*/
 }
 
@@ -124,6 +135,8 @@ html,body{
     top: 100%;
     background-color: #111;
     z-index:60;
+    height: 100%;
+/*    background-attachment: fixed;*/
 }
 
 #second-page-text-wrapper{
@@ -135,46 +148,37 @@ html,body{
 
 .second-page-heading{
     font-size: 50px;
-    margin: 0px 0px 52px 0px;
+    margin: 52px 0;
     color: white;
 }
 
 .second-page-text{
   font-size: 20px; 
-  margin-bottom: 37%;
+  margin-bottom: 25%;
     color: white;
 }
+
 .second-page-screenshot{
     left: 63%;
     display: inline-block;
-    width: 20%;
+    width: 18%;
     float: right;
     position: absolute;
-    top: 40px;
+    top: 90px;
 }
 
 #third-page{
-    background-image: url(Images/smartmockups_jdai1tf4.jpeg);
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background-size:cover;
-    position: absolute;
-    top: 195%;
-    background-attachment: fixed;
-    
+    position: fixed;
+    z-index: 40;
+    top: 0;
 }
 
 #fourth-page{
-    background-image: url(Images/smartmockups_jdaj4if6.jpeg);
-    z-index: 110;
-    width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-size: cover;
     position: absolute;
-    top:290%;
+    top: 300%;
+    z-index: 90;
 }
+
 
 @media only screen and (max-width:1024px){
 
@@ -186,6 +190,10 @@ html,body{
     .second-page-heading{
         font-size: 40px;
         margin-bottom: 10px;
+    }
+    
+    .scroller_anchor2{
+        top: 600px;
     }
     
 }
@@ -219,13 +227,13 @@ html,body{
 @media only screen and (max-width:500px){
     
     #first-page-text-wrapper{
-        padding: 20px;
+        padding: 20px;  
         width: 50%;
     }
     
     .first-page-heading{
         font-size: 20px;
-        margin:70px 0 10px 0;
+        margin:50px 0 10px 0;
     }
     
     .first-page-text{
@@ -234,7 +242,7 @@ html,body{
     
     .first-page-screenshot{
         width: 45%;
-        top:110px;
+        top:100px;
         left: 50%;
     }
     
@@ -245,20 +253,26 @@ html,body{
     
     .second-page-heading{
         font-size:20px;
-        margin:10px 0 10px 0;
+        margin:50px 0 10px 0;
     }
     
     .second-page-text{
         font-size: 15px;
-        margin-bottom: 46%;
+/*        margin-bottom: 46%;*/
     }
     
     .second-page-screenshot{
-        position: absolute;
-        top: 10%;
+/*        position: absolute;*/
+        top: 100px;
         width: 45%;
         left: 50%;
     }
+    
+    #third-page{
+        width: 100%;
+        height: 100%;
+    }
+    
     
 }
 
