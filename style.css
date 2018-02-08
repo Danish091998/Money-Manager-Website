@@ -80,11 +80,11 @@ html,body{
 }
 .scroller_anchor{height:10px; margin:0; padding:0;
 }
-.scroller_anchor2{height:10px; margin:0; position: relative; top:700px; padding:0;
+.scroller_anchor2{height:10px; margin:0; position: absolute; top:100%; padding:0;
 }
 .scroller_anchor3{height:10px; margin:0; padding:0;
 }
-.scroller_anchor4{height:10px; margin:0; position: relative; top:1300px; padding:0;
+.scroller_anchor4{height:10px; margin:0; position: absolute; top:200%; padding:0;
 }
 #first-page{
     width: 100%;
