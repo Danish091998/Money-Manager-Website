@@ -17,7 +17,7 @@ html,body{
     padding: 0;
     display: inline-block;
     color:white;
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Montserrat";
 }
 
@@ -26,9 +26,10 @@ html,body{
 }
 
 .app-name-wrapper{
-    padding: 10px;
+    padding: 15px 20px 15px 20px;
     display: inline-block;
 }
+
 
 #sidenav-button{
     margin: 0;
@@ -77,20 +78,35 @@ html,body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.scroller_anchor{height:10px; margin:0; padding:0;
+}
+.scroller_anchor2{height:10px; margin:0; position: absolute; top:100%; padding:0;
+}
+.scroller_anchor3{height:10px; margin:0; padding:0;
+}
+.scroller_anchor4{height:10px; margin:0; position: absolute; top:200%; padding:0;
+}
+.scroller_anchor5{height:10px; margin:0; padding:0; position: absolute; top: 300%;
+}
+.scroller_anchor6{height:10px; margin:0; position: absolute; top:300%; padding:0;
+}
 
 #first-page{
     width: 100%;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
     background-color: white;
-    z-index: 50;
+    z-index: 80;
     position: absolute;
+    height: 100%;
+    top: 200%;
 }
 
 #first-page-text-wrapper{
-    position: fixed;
+    position: absolute;
     width: 50%;
     display: inline-block;
     padding: 50px;
+    z-index: 50;
 }
 
 .first-page-heading
@@ -98,23 +114,24 @@ html,body{
     font-size: 50px;
     margin: 52px 0;
     color: black;
+    z-index: 50;
 }
 
 .first-page-text
 {
   font-size: 20px; 
   margin-bottom: 25%;
-    
+    z-index: 50;   
 }
 
 .first-page-screenshot{
-    
     left:63%;
     display: inline-block;
-    width: 20%;
+    width: 18%;
     float: right;
-    position: fixed;
-    top:100px;
+    position: absolute;
+    top:90px;
+    z-index: 50;
 /*    margin-top: -50px;*/
 }
 
@@ -123,6 +140,8 @@ html,body{
     top: 100%;
     background-color: #111;
     z-index:60;
+    height: 100%;
+/*    background-attachment: fixed;*/
 }
 
 #second-page-text-wrapper{
@@ -134,23 +153,84 @@ html,body{
 
 .second-page-heading{
     font-size: 50px;
-    margin: 0px 0px 52px 0px;
+    margin: 52px 0;
     color: white;
 }
 
 .second-page-text{
   font-size: 20px; 
-  margin-bottom: 33%;
+  margin-bottom: 25%;
     color: white;
 }
+
 .second-page-screenshot{
     left: 63%;
     display: inline-block;
-    width: 20%;
+    width: 18%;
     float: right;
     position: absolute;
-    top: 40px;
+    top: 90px;
 }
+
+#third-page{
+    position: fixed;
+    z-index: 40;
+    top: 0;
+}
+
+#fourth-page{
+    position: absolute;
+    top: 300%;
+    z-index: 90;
+}
+
+#fifth-page{
+    position: absolute;
+    top: 468%;
+    z-index: 100;
+    background-color: #00aff0;
+    width: 100%;
+/*    padding:15% 0;*/
+/*    text-align: center;*/
+    padding-bottom: 15%;
+}
+
+#adjustment-for-padding{
+    margin-top: 15%;
+}
+
+.form-inputs{
+    width: 40%;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px 10px 30px;
+    border-radius: 50px;
+    border:none;
+    box-shadow: 1px 1px 10px #616161;
+    background-color: white;
+    font-family: "Roboto";
+}
+
+#message-box{
+    height: 220px;
+    border-radius: 30px;   
+}
+
+#submit-button{
+    padding: 10px 50px 10px 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+/*    font-weight: lighter;*/
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #00aff0;
+    box-shadow: 1px 1px 10px #616161;
+/*    margin-top: 10px;*/
+}
+
 
 @media only screen and (max-width:1024px){
 
@@ -163,6 +243,12 @@ html,body{
         font-size: 40px;
         margin-bottom: 10px;
     }
+    
+/*
+    .scroller_anchor2{
+        top: 600px;
+    }
+*/
     
 }
 
@@ -189,19 +275,31 @@ html,body{
         width: 28%;
         left: 60%;
     }
+    .form-inputs{
+        width: 60%;
+    }
     
+/*
+    .scroller_anchor2{
+        top: 500px;
+    }
+    
+    .scroller_anchor4{
+        top: 1050px;
+    }
+*/
 }
 
 @media only screen and (max-width:500px){
     
     #first-page-text-wrapper{
-        padding: 20px;
+        padding: 20px;  
         width: 50%;
     }
     
     .first-page-heading{
         font-size: 20px;
-        margin:70px 0 10px 0;
+        margin:50px 0 10px 0;
     }
     
     .first-page-text{
@@ -210,7 +308,7 @@ html,body{
     
     .first-page-screenshot{
         width: 45%;
-        top:20%;
+        top:100px;
         left: 50%;
     }
     
@@ -221,18 +319,41 @@ html,body{
     
     .second-page-heading{
         font-size:20px;
-        margin:10px 0 10px 0;
+        margin:50px 0 10px 0;
     }
     
     .second-page-text{
         font-size: 15px;
+/*        margin-bottom: 46%;*/
     }
     
     .second-page-screenshot{
-        position: absolute;
-        top: 10%;
+/*        position: absolute;*/
+        top: 100px;
         width: 45%;
         left: 50%;
+    }
+    
+    #third-page{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #fourth-page{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .form-inputs{
+        width: 80%;
+    }
+    
+    #adjustment-for-padding{
+    margin-top: 30%;
+    }
+    
+    #fifth-page{
+        padding-bottom: 30%;
     }
     
 }
