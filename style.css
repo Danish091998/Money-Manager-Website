@@ -86,6 +86,11 @@ html,body{
 }
 .scroller_anchor4{height:10px; margin:0; position: absolute; top:200%; padding:0;
 }
+.scroller_anchor5{height:10px; margin:0; padding:0; position: absolute; top: 300%;
+}
+.scroller_anchor6{height:10px; margin:0; position: absolute; top:300%; padding:0;
+}
+
 #first-page{
     width: 100%;
 /*    background-attachment: fixed;*/
@@ -179,6 +184,53 @@ html,body{
     z-index: 90;
 }
 
+#fifth-page{
+    position: absolute;
+    top: 468%;
+    z-index: 100;
+    background-color: #00aff0;
+    width: 100%;
+/*    padding:15% 0;*/
+/*    text-align: center;*/
+    padding-bottom: 15%;
+}
+
+#adjustment-for-padding{
+    margin-top: 15%;
+}
+
+.form-inputs{
+    width: 40%;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px 10px 30px;
+    border-radius: 50px;
+    border:none;
+    box-shadow: 1px 1px 10px #616161;
+    background-color: white;
+    font-family: "Roboto";
+}
+
+#message-box{
+    height: 220px;
+    border-radius: 30px;   
+}
+
+#submit-button{
+    padding: 10px 50px 10px 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+/*    font-weight: lighter;*/
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #00aff0;
+    box-shadow: 1px 1px 10px #616161;
+/*    margin-top: 10px;*/
+}
+
 
 @media only screen and (max-width:1024px){
 
@@ -192,9 +244,11 @@ html,body{
         margin-bottom: 10px;
     }
     
+/*
     .scroller_anchor2{
         top: 600px;
     }
+*/
     
 }
 
@@ -221,7 +275,11 @@ html,body{
         width: 28%;
         left: 60%;
     }
+    .form-inputs{
+        width: 60%;
+    }
     
+/*
     .scroller_anchor2{
         top: 500px;
     }
@@ -229,6 +287,7 @@ html,body{
     .scroller_anchor4{
         top: 1050px;
     }
+*/
 }
 
 @media only screen and (max-width:500px){
@@ -285,6 +344,17 @@ html,body{
         height: 100%;
     }
     
+    .form-inputs{
+        width: 80%;
+    }
+    
+    #adjustment-for-padding{
+    margin-top: 30%;
+    }
+    
+    #fifth-page{
+        padding-bottom: 30%;
+    }
     
 }
 
