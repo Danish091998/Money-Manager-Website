@@ -1,37 +1,4 @@
 
-//function openNav() {
-//    document.getElementById("mySidenav").style.width = "250px";
-//    $("#content").animate({"opacity":"0.3"});
-//}
-//
-//function closeNav() {
-//    document.getElementById("mySidenav").style.width = "0";
-//    $("#content").animate({"opacity":"1"});
-//}
-//
-//$("#feature-section").click(function() {
-//    $('html, body').animate({
-//        scrollTop: $("#second-page").offset().top
-//    }, 1000);
-//    
-//    closeNav();
-//});
-//
-//$("#home-section").click(function() {
-//    $('html, body').animate({
-//        scrollTop: $("#third-page").offset().top
-//    }, 1000);
-//    closeNav();
-//});
-//
-//$("#contact-section").click(function() {
-//    $('html, body').animate({
-//        scrollTop: $("#fifth-page").offset().top
-//    }, 1000,"swing",function(){$("#second-page").css("position","absolute");});
-//    
-//    closeNav();
-//});
-
 
 document.onreadystatechange = function () {
   var state = document.readyState
@@ -62,18 +29,7 @@ document.onreadystatechange = function () {
 }
 
 
-//$(document).ready(function() {
-////	$(document).click(function(){
-////    $('body').toggleClass('loaded');
-////        
-////  });
-//	setTimeout(function(){
-//		$('body').addClass('loaded');
-//		$('h1').css('color','#222222');
-//        
-//	}, 3000);
-//	
-//});
+
 
 $(window).scroll(function(e) {
     // Get the position of the location where the scroller starts.
