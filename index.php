@@ -46,6 +46,8 @@
         <div id="top-bar">
 <!--            <i id="sidenav-button" class="fas fa-bars" onclick="openNav()"></i>-->
                     
+            <img class="logo" src="Images/web_hi_mmlogo.png">
+            
                 <div class="app-name-wrapper">
                     <p class="app-name">Money</p>
                     <p id="app-name-manager" class="app-name">Manager</p>

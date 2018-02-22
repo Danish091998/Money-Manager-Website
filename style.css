@@ -164,21 +164,30 @@ html,body{
     z-index: 500;
 }
 
+.logo{
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    margin-top: -8px;
+    margin-left: 3%;
+    }
+
 .app-name{
     margin: 0;
     padding: 0;
     display: inline-block;
     color:white;
     font-size: 25px;
-    font-family: "Montserrat";
+    font-family: "Oxygen";
+    font-weight: 900;
 }
 
 #app-name-manager{
-    color: #00aff0;
+    color: #86ADB6;
 }
 
 .app-name-wrapper{
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px 15px 5px;
     display: inline-block;
 }
 
@@ -493,36 +502,45 @@ footer{
         width: 60%;
     }
     
-    
-    
-/*
-    #fallback{
-    display: block;
-    position: absolute;
-    top: 300%;
-    z-index: 90;
-    background-image: url(Images/smartmockups_jdaj4if6.jpeg);
-    background-size: cover;
-    height: 100%;
-    width: 100%;    
-    }
-*/
-    
-/*
-    .scroller_anchor2{
-        top: 500px;
+     video{
+        display: none;
     }
     
-    .scroller_anchor4{
-        top: 1050px;
+    #fallback-home-page{
+        display: block;
+        position: fixed;
+        background-image: url(Images/smartmockups_jdai1tf4.jpeg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
     }
-*/
+    
+    .third-page-heading1{
+        color: #333;
+        font-size: 25px;
+    }
+    
+    .third-page-heading2{
+        color: #333;
+        font-size: 25px;
+    }
+    
+    .third-page-text{
+        color: #333;
+        font-size: 15px;
+    }
+    
+
 }
 
 @media only screen and (max-width:500px){
     
     .app-name{
     font-size: 22px;    
+    }
+    
+    .logo{
+        width: 45px;
     }
     
     #first-page-text-wrapper{
@@ -567,9 +585,7 @@ footer{
         left: 50%;
     }
     
-    video{
-        display: none;
-    }
+   
     
     #fallback-home-page{
          display: block;
