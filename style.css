@@ -337,6 +337,7 @@ html,body{
     z-index: 45;
     font-size: 30px;
     font-family: "Oxygen";
+    color: white;
 }
 
 .third-page-heading2{
@@ -346,6 +347,7 @@ html,body{
     z-index: 45;
     font-size: 30px;
     font-family: "Oxygen";
+    color: white;
 }
 
 .third-page-text{
@@ -356,45 +358,36 @@ html,body{
     font-size: 17px;
     font-family: "Oxygen";
     width: 30%;
+    color: white;
 }
 
 #third-page{
     position: fixed;
     z-index: 40;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(Images/third-page.jpg);
-    background-size: cover;
-}
-
-#fourth-page{
-    position: absolute;
-    top: 300%;
-    z-index: 90;
-    min-height: auto;
     min-width: auto;
+    min-height: auto;
     right: 0;
     bottom: 0;
-
 }
+
+
+
+#fallback-home-page{display: none;}
 
 
 #fifth-page{
     position: absolute;
-    top: 400%;
+    top: 300%;
     height: 100%;
     z-index: 100;
     background-color: #00aff0;
     width: 100%;
-/*    padding:15% 0;*/
-/*    text-align: center;*/
-/*    padding-bottom: 12%;*/
 }
 
 footer{
     position: absolute;
-    top:500%;
+    top:400%;
     z-index: 110;
     width: 100%;
     background-color: #003448;
@@ -407,7 +400,7 @@ footer{
     font-size: 17px;
 }
 
-#adjustment-for-padding{
+#name{
     margin-top: 12%;
 }
 
@@ -500,6 +493,21 @@ footer{
         width: 60%;
     }
     
+    
+    
+/*
+    #fallback{
+    display: block;
+    position: absolute;
+    top: 300%;
+    z-index: 90;
+    background-image: url(Images/smartmockups_jdaj4if6.jpeg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;    
+    }
+*/
+    
 /*
     .scroller_anchor2{
         top: 500px;
@@ -559,12 +567,21 @@ footer{
         left: 50%;
     }
     
-    #third-page{
+    video{
+        display: none;
+    }
+    
+    #fallback-home-page{
+         display: block;
+        position: fixed;
         background-image: url(Images/mobile-home-screen.png);
         background-size: 230px;
         background-repeat: no-repeat;
         background-position: center;
         top: 180px;
+        z-index: 40;
+        width: 100%;
+        height: 100%;
     }
     
     .third-page-wrapper{
@@ -609,17 +626,24 @@ footer{
         color: white;
         text-align: center;
     }
+    
+    
 
+    #fifth-page{
+        height: 200%;
+    }
+    
     .form-inputs{
         width: 80%;
     }
     
-    #adjustment-for-padding{
+    #name{
     margin-top: 30%;
     }
     
     footer{
         font-size: 15px;
+        top: 500%;
     }
 }
 
