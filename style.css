@@ -3,6 +3,158 @@ html,body{
     padding: 0;
     overflow-x: hidden;
 }
+
+
+
+/*        Loader*/
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #222222;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #222222;
+    }
+
+
+
+
 #top-bar{
     margin: 0;
     padding: 0;
@@ -12,25 +164,35 @@ html,body{
     z-index: 500;
 }
 
+.logo{
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    margin-top: -8px;
+    margin-left: 3%;
+    }
+
 .app-name{
     margin: 0;
     padding: 0;
     display: inline-block;
     color:white;
     font-size: 25px;
-    font-family: "Montserrat";
+    font-family: "Oxygen";
+    font-weight: 900;
 }
 
 #app-name-manager{
-    color: #00aff0;
+    color: #86ADB6;
 }
 
 .app-name-wrapper{
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px 15px 5px;
     display: inline-block;
 }
 
 
+/*
 #sidenav-button{
     margin: 0;
     padding: 0;
@@ -78,17 +240,18 @@ html,body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-.scroller_anchor{height:10px; margin:0; padding:0;
+*/
+.scroller_anchor{height:0px; margin:0; padding:0;
 }
-.scroller_anchor2{height:10px; margin:0; position: absolute; top:100%; padding:0;
+.scroller_anchor2{height:0px; margin:0; position: absolute; top:100%; padding:0;
 }
-.scroller_anchor3{height:10px; margin:0; padding:0;
+.scroller_anchor3{height:0px; margin:0; padding:0;
 }
-.scroller_anchor4{height:10px; margin:0; position: absolute; top:200%; padding:0;
+.scroller_anchor4{height:0px; margin:0; position: absolute; top:200%; padding:0;
 }
-.scroller_anchor5{height:10px; margin:0; padding:0; position: absolute; top: 300%;
+.scroller_anchor5{height:0px; margin:0; padding:0; position: absolute; top: 300%;
 }
-.scroller_anchor6{height:10px; margin:0; position: absolute; top:300%; padding:0;
+.scroller_anchor6{height:0px; margin:0; position: absolute; top:300%; padding:0;
 }
 
 #first-page{
@@ -115,14 +278,16 @@ html,body{
     margin: 52px 0;
     color: black;
     z-index: 50;
+    font-family: "Oxygen";
 }
 
 .first-page-text
-{
-  font-size: 20px; 
-  margin-bottom: 25%;
-    z-index: 50;   
-}
+    {
+    font-size: 20px; 
+    margin-bottom: 25%;
+    z-index: 50; 
+    font-family: "Oxygen";
+    }
 
 .first-page-screenshot{
     left:63%;
@@ -155,12 +320,14 @@ html,body{
     font-size: 50px;
     margin: 52px 0;
     color: white;
+    font-family: "Oxygen";
 }
 
 .second-page-text{
   font-size: 20px; 
   margin-bottom: 25%;
     color: white;
+    font-family: "Oxygen";
 }
 
 .second-page-screenshot{
@@ -172,31 +339,78 @@ html,body{
     top: 90px;
 }
 
+.third-page-heading1{
+    position: fixed;
+    top: 30%;
+    left: 5%;
+    z-index: 45;
+    font-size: 30px;
+    font-family: "Oxygen";
+    color: white;
+}
+
+.third-page-heading2{
+    position: fixed;
+    top: 35%;
+    left: 5%;
+    z-index: 45;
+    font-size: 30px;
+    font-family: "Oxygen";
+    color: white;
+}
+
+.third-page-text{
+    position: fixed;
+    top:43%;
+    left: 5%;
+    z-index: 45;
+    font-size: 17px;
+    font-family: "Oxygen";
+    width: 30%;
+    color: white;
+}
+
 #third-page{
     position: fixed;
     z-index: 40;
     top: 0;
+    min-width: auto;
+    min-height: auto;
+    right: 0;
+    bottom: 0;
 }
 
-#fourth-page{
-    position: absolute;
-    top: 300%;
-    z-index: 90;
-}
+
+
+#fallback-home-page{display: none;}
+
 
 #fifth-page{
     position: absolute;
-    top: 468%;
+    top: 300%;
+    height: 100%;
     z-index: 100;
     background-color: #00aff0;
     width: 100%;
-/*    padding:15% 0;*/
-/*    text-align: center;*/
-    padding-bottom: 15%;
 }
 
-#adjustment-for-padding{
-    margin-top: 15%;
+footer{
+    position: absolute;
+    top:400%;
+    z-index: 110;
+    width: 100%;
+    background-color: #003448;
+    padding: 0;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+    font-family: "Oxygen";
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#name{
+    margin-top: 12%;
 }
 
 .form-inputs{
@@ -209,16 +423,24 @@ html,body{
     border:none;
     box-shadow: 1px 1px 10px #616161;
     background-color: white;
-    font-family: "Roboto";
+    font-family: "Oxygen";
+    font-weight: 600;
+    color: #00aff0;
+    text-decoration: none;
 }
 
 #message-box{
     height: 220px;
-    border-radius: 30px;   
+    border-radius: 30px;  
+    font-family: "Oxygen";
+    font-weight: 600;
+    color: #00aff0;
+    text-decoration: none;
 }
 
 #submit-button{
-    padding: 10px 50px 10px 50px;
+    padding: 0;
+    padding: 11px 50px 10px 50px;
     font-size: 16px;
     text-transform: uppercase;
     font-family: "Montserrat";
@@ -228,6 +450,7 @@ html,body{
     background-color: white;
     color: #00aff0;
     box-shadow: 1px 1px 10px #616161;
+    text-decoration: none;
 /*    margin-top: 10px;*/
 }
 
@@ -279,18 +502,46 @@ html,body{
         width: 60%;
     }
     
-/*
-    .scroller_anchor2{
-        top: 500px;
+     video{
+        display: none;
     }
     
-    .scroller_anchor4{
-        top: 1050px;
+    #fallback-home-page{
+        display: block;
+        position: fixed;
+        background-image: url(Images/smartmockups_jdai1tf4.jpeg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
     }
-*/
+    
+    .third-page-heading1{
+        color: #333;
+        font-size: 25px;
+    }
+    
+    .third-page-heading2{
+        color: #333;
+        font-size: 25px;
+    }
+    
+    .third-page-text{
+        color: #333;
+        font-size: 15px;
+    }
+    
+
 }
 
 @media only screen and (max-width:500px){
+    
+    .app-name{
+    font-size: 22px;    
+    }
+    
+    .logo{
+        width: 45px;
+    }
     
     #first-page-text-wrapper{
         padding: 20px;  
@@ -334,81 +585,82 @@ html,body{
         left: 50%;
     }
     
-    #third-page{
+   
+    
+    #fallback-home-page{
+         display: block;
+        position: fixed;
+        background-image: url(Images/mobile-home-screen.png);
+        background-size: 230px;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 180px;
+        z-index: 40;
         width: 100%;
         height: 100%;
     }
     
-    #fourth-page{
+    .third-page-wrapper{
+        position: fixed;
+        background: #616161;
         width: 100%;
         height: 100%;
+    }
+    
+    .third-page-heading1{
+        top: 55px;
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+    
+    .third-page-heading2{
+        top: 80px;
+        width:60%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+    
+    .third-page-text{
+        top: 115px;
+        width: 70%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+    }
+    
+    
+
+    #fifth-page{
+        height: 200%;
     }
     
     .form-inputs{
         width: 80%;
     }
     
-    #adjustment-for-padding{
+    #name{
     margin-top: 30%;
     }
     
-    #fifth-page{
-        padding-bottom: 30%;
+    footer{
+        font-size: 15px;
+        top: 500%;
     }
-    
 }
 
 
-/*
-
-#first-page{
-    width: 100%;
-    background-color: white;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-}
-
-.first-page-feature-heading{
-    font-size: 60px;
-    margin: 100px;
-}
-
-.first-page-feature-text{
-    font-size: 20px;
-    margin: -50px 100px 70px;
-}
-
-.first-page-feature-screenshot{
-    width: 45%;
-    position: fixed;
-    z-index: 50;
-}
-
-#second-page{
-    position: absolute;
-    z-index: 500;
-    width: 100%;
-    background-color: #111;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-}
-
-.second-page-feature-heading{
-    font-size: 60px;
-    margin: 100px;
-    color: white;
-}
-
-.second-page-feature-text{
-    font-size: 20px;
-    margin: -50px 100px 70px;
-    color: white;
-}
-
-.second-page-feature-screenshot{
-    width: 90%;
-    position: absolute;
-    z-index: 100;
-}*/
