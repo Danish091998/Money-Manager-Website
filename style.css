@@ -162,6 +162,7 @@ html,body{
     background-color: #3A3A3A;
     position: fixed;
     z-index: 500;
+    box-shadow: 1px 1px 10px #333;
 }
  
 .logo{
@@ -451,6 +452,7 @@ footer{
     color: #588994;
     box-shadow: 1px 1px 10px #616161;
     text-decoration: none;
+    cursor: pointer;
 /*    margin-top: 10px;*/
 }
  
