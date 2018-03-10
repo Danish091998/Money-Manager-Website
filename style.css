@@ -540,6 +540,10 @@ footer{
     .app-name{
     font-size: 22px;    
     }
+    
+    .app-name-wrapper{
+        padding: 15px 20px 15px 5px;
+    }
    
     .logo{
         width: 45px;
