@@ -101,6 +101,8 @@
         </div>
         <div id="fallback-home-page"> </div>
         
+        <div class="scroller_anchor6"></div>
+        
         <div id="new-feature-page">
                                 <div class="scroller_anchor5"></div>
 

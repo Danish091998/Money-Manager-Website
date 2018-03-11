@@ -630,7 +630,6 @@ footer{
     }
    
    
-   
     #fallback-home-page{
          display: block;
         position: fixed;
@@ -652,8 +651,8 @@ footer{
     }
    
     .third-page-heading1{
-        top: 55px;
-        width: 50%;
+        top: 60px;
+        width: 60%;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -661,6 +660,7 @@ footer{
         font-size: 20px;
         color: white;
         text-align: center;
+        font-size: 17px;
     }
    
     .third-page-heading2{
@@ -673,10 +673,11 @@ footer{
         font-size: 20px;
         color: white;
         text-align: center;
+        font-size: 17px;
     }
    
     .third-page-text{
-        top: 115px;
+        top: 108px;
         width: 70%;
         left: 0;
         right: 0;
@@ -703,6 +704,6 @@ footer{
    
     footer{
         font-size: 15px;
-        top: 500%;
+        top: 600%;
     }
 }
