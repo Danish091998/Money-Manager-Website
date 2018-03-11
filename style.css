@@ -250,11 +250,35 @@ html,body{
 }
 .scroller_anchor4{height:0px; margin:0; position: absolute; top:200%; padding:0;
 }
-.scroller_anchor5{height:0px; margin:0; padding:0; position: absolute; top: 300%;
+.scroller_anchor5{height:0px; margin:0; padding:0;
 }
 .scroller_anchor6{height:0px; margin:0; position: absolute; top:300%; padding:0;
 }
  
+.video-container{
+/*    display: block;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    //padding: 20px;
+    border-radius: 5px;
+    background-attachment: scroll;
+    overflow: hidden;
+    z-index: 30;
+}
+
+.video-container .overlay {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 41;
+    background: #9e9e9e;
+    opacity: 0.5;
+}
+
 #first-page{
     width: 100%;
 /*    background-attachment: fixed;*/
@@ -307,6 +331,7 @@ html,body{
     background-color: #111;
     z-index:60;
     height: 100%;
+    width: 100%;
 /*    background-attachment: fixed;*/
 }
  
@@ -345,9 +370,9 @@ html,body{
     top: 30%;
     left: 5%;
     z-index: 45;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Oxygen";
-    color: white;
+    color: #333;
 }
  
 .third-page-heading2{
@@ -355,9 +380,9 @@ html,body{
     top: 35%;
     left: 5%;
     z-index: 45;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Oxygen";
-    color: white;
+    color: #333;
 }
  
 .third-page-text{
@@ -365,10 +390,10 @@ html,body{
     top:43%;
     left: 5%;
     z-index: 45;
-    font-size: 17px;
+    font-size: 22px;
     font-family: "Oxygen";
     width: 30%;
-    color: white;
+    color: #333;
 }
  
 #third-page{
@@ -381,6 +406,15 @@ html,body{
     bottom: 0;
 }
  
+#new-feature-page{
+    position: absolute;
+    top: 300%;
+    background-color: #111;
+    z-index:80;
+    height: 100%;
+    width: 100%;
+/*    background-attachment: fixed;*/
+}
  
  
 #fallback-home-page{display: none;}
@@ -388,7 +422,7 @@ html,body{
  
 #fifth-page{
     position: absolute;
-    top: 300%;
+    top: 400%;
     height: 100%;
     z-index: 100;
     background-color: #588994;
@@ -397,7 +431,7 @@ html,body{
  
 footer{
     position: absolute;
-    top:400%;
+    top:500%;
     z-index: 110;
     width: 100%;
     background-color: #275C69;
@@ -531,6 +565,10 @@ footer{
         color: #333;
         font-size: 15px;
     }
+    
+    .video-container .overlay{
+        display: none;
+    }
    
  
 }
@@ -592,7 +630,6 @@ footer{
     }
    
    
-   
     #fallback-home-page{
          display: block;
         position: fixed;
@@ -614,8 +651,8 @@ footer{
     }
    
     .third-page-heading1{
-        top: 55px;
-        width: 50%;
+        top: 60px;
+        width: 60%;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -623,6 +660,7 @@ footer{
         font-size: 20px;
         color: white;
         text-align: center;
+        font-size: 17px;
     }
    
     .third-page-heading2{
@@ -635,10 +673,11 @@ footer{
         font-size: 20px;
         color: white;
         text-align: center;
+        font-size: 17px;
     }
    
     .third-page-text{
-        top: 115px;
+        top: 108px;
         width: 70%;
         left: 0;
         right: 0;
@@ -665,6 +704,6 @@ footer{
    
     footer{
         font-size: 15px;
-        top: 500%;
+        top: 600%;
     }
 }
