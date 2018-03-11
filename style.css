@@ -331,6 +331,7 @@ html,body{
     background-color: #111;
     z-index:60;
     height: 100%;
+    width: 100%;
 /*    background-attachment: fixed;*/
 }
  
@@ -369,7 +370,7 @@ html,body{
     top: 30%;
     left: 5%;
     z-index: 45;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Oxygen";
     color: #333;
 }
@@ -379,7 +380,7 @@ html,body{
     top: 35%;
     left: 5%;
     z-index: 45;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Oxygen";
     color: #333;
 }
@@ -389,7 +390,7 @@ html,body{
     top:43%;
     left: 5%;
     z-index: 45;
-    font-size: 17px;
+    font-size: 22px;
     font-family: "Oxygen";
     width: 30%;
     color: #333;
@@ -411,6 +412,7 @@ html,body{
     background-color: #111;
     z-index:80;
     height: 100%;
+    width: 100%;
 /*    background-attachment: fixed;*/
 }
  
