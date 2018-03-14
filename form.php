@@ -18,17 +18,19 @@ $db         = "money-manager-32369245";
     // check to see if inputs are empty
     // create variables with form data
     // wrap the data with our function
-    
-    if( $_POST["name"]=="" ) {
-        echo "Please enter your Name";
-    } 
 
-    elseif( $_POST["email"]=="" ) {
-        echo "Please enter your Email";
+    
+
+    if( $_POST["name"]=="" ) {
+        echo "Please enter your name";
+    }
+
+    else if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+  echo("Please enter a valid email address");
     }
 
     elseif( $_POST["message"]=="" ) {
-        echo "Please enter your Message";
+        echo "Please enter your message";
     }
     
     // check to see if each variable has data
@@ -39,7 +41,8 @@ $db         = "money-manager-32369245";
         VALUES ('".mysqli_real_escape_string($conn,$_POST['name'])."','".mysqli_real_escape_string($conn,$_POST['email'])."','".mysqli_real_escape_string($conn,$_POST['message'])."')";
 
        if(mysqli_query($conn,$query)){    
-      echo "Your Message was sent Succesfully!";   
+      echo "Your Message was sent Succesfully!";
+            
   } 
     
     else{

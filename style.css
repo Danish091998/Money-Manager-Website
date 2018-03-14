@@ -26,7 +26,7 @@ html,body{
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #86ad86;
  
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -43,7 +43,7 @@ html,body{
         bottom: 5px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #e74c3c;
+        border-top-color: #588994;
  
         -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
         animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -58,7 +58,7 @@ html,body{
         bottom: 15px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #f9c922;
+        border-top-color: #346c79;
  
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -275,8 +275,8 @@ html,body{
     top: 0px;
     left: 0px;
     z-index: 41;
-    background: #9e9e9e;
-    opacity: 0.5;
+    background: #fff;
+    opacity: 0.55;
 }
 
 #first-page{
@@ -429,6 +429,16 @@ html,body{
     width: 100%;
 }
  
+h1{
+    text-align: center;
+    padding-top: 3%;
+    font-family: "Oxygen";
+    font-weight: 600;
+    font-size: 45px;
+    color: white;
+/*    text-shadow: 2px 1px #CBCDCE;*/
+}
+
 footer{
     position: absolute;
     top:500%;
@@ -445,7 +455,7 @@ footer{
 }
  
 #name{
-    margin-top: 12%;
+    margin-top: 3%;
 }
  
 .form-inputs{
@@ -689,7 +699,6 @@ footer{
     }
    
    
- 
     #fifth-page{
         height: 200%;
     }
@@ -698,8 +707,13 @@ footer{
         width: 80%;
     }
    
+    h1{
+        font-size: 30px;
+        padding-top: 15%;
+    }
+    
     #name{
-    margin-top: 30%;
+    margin-top: 15%;
     }
    
     footer{
