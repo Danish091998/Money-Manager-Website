@@ -55,12 +55,8 @@ $("#submit-button").click(function()
           .done(function( msg ) {
             $('#myModal').modal('show');
 //            alert(msg);
-            document.getElementById("modal-text").innerHTML= msg;
-           
-           
-            if ( msg != "Please enter your Name" && msg != "Please enter your Email" && msg != "Please enter your Message" ) {
-                window.location.href = "index.php";
-               }
+            document.getElementById("modal-text").innerHTML= msg; 
+            
           });
  
 });
